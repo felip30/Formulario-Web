@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Completo</title>
+</head>
+<body>
+
+    <h2>Formulario de Registro</h2>
+
+    <form action="#" method="post">
+
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required><br><br>
+
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required><br><br>
+
+        <label for="tipo_id">Tipo de identificación:</label><br>
+        <select id="tipo_id" name="tipo_id" required>
+            <option value="">Seleccionar...</option>
+            <option value="CC">Cédula de Ciudadanía</option>
+            <option value="TI">Tarjeta de Identidad</option>
+            <option value="CE">Cédula de Extranjería</option>
+            <option value="PA">Pasaporte</option>
+        </select><br><br>
+
+        <label for="numero_id">Número de identificación:</label><br>
+        <input type="text" id="numero_id" name="numero_id" placeholder="Ingrese su número de identificación" required><br><br>
+
+        <label for="fecha_nacimiento">Fecha de nacimiento:</label><br>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+
+        <label for="contacto">Número de contacto:</label><br>
+        <input type="tel" id="contacto" name="contacto" placeholder="Ejemplo: 3001234567" required><br><br>
+
+        <label>
+            <input type="checkbox" name="politicas" required>
+            Acepto políticas de tratamiento de datos
+        </label><br><br>
+
+        <label>
+            <input type="checkbox" name="autorizo" required>
+            Autorizo el uso de mi información
+        </label><br><br>
+
+        <button type="submit">Enviar Formulario</button>
+    </form>
+
+</body>
+</html>
